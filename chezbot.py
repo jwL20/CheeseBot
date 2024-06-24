@@ -5,7 +5,7 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-os.environ["NVIDIA_API_KEY"] = "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"
+os.environ["NVIDIA_API_KEY"] = "PUT NVIDIA_API_KEY HERE"
 
 cheeses_df = pd.read_csv('cheeses.csv')
 cheese_descriptions = cheeses_df[['cheese', 'flavor']].dropna().set_index('cheese')['flavor'].to_dict()
